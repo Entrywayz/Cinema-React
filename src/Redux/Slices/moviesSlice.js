@@ -38,7 +38,7 @@ export const fetchMovies = createAsyncThunk('movie/fetchMovies', () => {
     //            103],
     //        "id": "1"
     //    },]
-    return axios.get(PASTE_YOUR_API_URL)
+    return axios.get('https://681d2f31f74de1d219af0689.mockapi.io/movies')
         .then((response) => {
             return response.data;
         })
